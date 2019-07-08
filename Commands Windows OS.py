@@ -1,40 +1,68 @@
-##########					     ##########
-########## COMMANDS.py ADDONS    ##########
-##########						 ##########
+##########					             ##########
+########## Commands Windows OS.py Feature ##########
+##########						         ##########
 
-## VOIR L'OS DE LA MACHINE [INCLUDE TO RAT.py] ##
+#### LIST DE COMMANDES WINDOWS OS ####
 
-# Importations necessaires
+# A SAVOIR :
+
+            #  os.system() function permet l'execution de commande system
+            #  subprocess.call() Function permet l'execution de commande system
+            #  subprocess.call >= os.system ( + Rapide pour execute shell / bash commandes )
+
+ ### INPORTATIONS NECESSAIRES ###
 
 import platform
 
-# Renvoyer le type du système d'exploitation
+## VOIR TYPE D'OS ##
 
 osType = platform.system()
 print("OS TYPE: " + osType)
 
-# Renvoyer la version du système d'exploitation.
-
-osRelease = platform.release()
-print("\nversion: " + osRelease)
-
 ## VOIR TOUT LES PORTS ACTIFS ##
-
-# os.system(“commande utilisé pour éxécuté un paramètre")
 
 import os
 
 print("Tout les ports actifs: ")
-os.system("netstat -aon")
+os.system("netstat -a")
 
-## VOIR LES CONNEXIONS ENTRANTES/SORTANTES ##
+## VOIR LES CONNEXIONS ENTRANTES/SORTANTES + PORTS ACTIFS##
 
 import os
 
-print("Liste des connexions entrantes/sortantes :")
+print("Liste des connexions entrantes/sortantes & ports actifs :")
 os.system("netstat -n")
 
-## VOIR INFORMATION RESEAU SIMPLE DE LA MACHINE ##
+## VOIR FICHIERS EXECUTABLES A L'ORIGINE DES CONNEXIONS OU DES PORTS D'ECOUTE ##
+
+import os
+print("netstat -b")
+os.system("netstat -b")
+# Optionnel : netstat -b -v 5 = Réactualiser toute les 5 secondes
+
+## VOIR LES STATISTIQUES PAR PROTOCOLE ##
+
+import os
+
+print("Voir les statistiques par protocole:")
+os.system("netstat -s")
+
+## VOIR LA TABLE DE ROUTAGE ##
+
+import os
+
+print("Voir la table de routage:")
+os.system("netstat -r")
+
+## VOIR LE CHEMIN SUIVIT PAR UN PAQUET IP ##
+
+import os
+
+print("voir me chemin suivit par un paquet IP")
+os.system("tracert 185.85.12.47")
+#Optionnel : IP A MODIFIER SELON LE SERVEUR SUIVIT
+
+## VOIR INFORMATION RESEAU SIMPLIFIE ##
 
 import os
 
@@ -61,11 +89,19 @@ import os
 print("Addrese mac des cartes réseaux")
 os.system("getmac /v")
 
+## EXECUTER UNE REQUETE PING ##
+
+import os
+
+print("Executer une requête ping")
+os.system("ping 192.168.1.254")
+# Optionnel : DEFINIR L IP SELON LA REQUETE + FAIRE /t POUR REQUETE EN CONTINUE
+
 ## VOIR LES INFORMATIONS DE LA MACHINE ##
 
 import os
 
-print("Toute les informations de la machine"
+print("Toute les informations de la machine")
 os.system("systeminfo")
 
 ## ETEINDRE LA MACHINE ##
@@ -121,8 +157,15 @@ os.system("dir recent")
 
 import os
 
-print("Toutes les applications et services en cours")
+print("Tout les processus en cours")
 os.system("tasklist")
+
+## AFFICHER LES SERVICES EN GUI ##
+
+import os
+
+print("Afficher les services actifs")
+os.system("services.msc")
 
 ## AFFICHER LE GESTIONNAIRE DES DISQUES - ! GRAPHIQUE UNIQUEMENT ! ##
 
@@ -198,7 +241,7 @@ os.system("taskmgr")
 
 import os
 
-print("Configurations des sessions de la machine"
+print("Configurations des sessions de la machine")
 os.system("netplwiz")
 
 ## AFFICHER LE REGISTRE DE LA MACHINE - ! GRAPHIQUE UNIQUEMENT ! ##
@@ -235,3 +278,18 @@ import os
 
 print("Afficher l'heure du system")
 os.system("time")
+
+## FORCE LES GPO - ACTIVE DIRECTORY ##
+
+import os
+print("Forcer les GPO d'Active Directory")
+os.system("gpupdate /force")
+
+## CLAVIER VIRTUEL ##
+
+import os
+print("Afficher le clavier virtuel")
+os.system("osk")
+
+
+
