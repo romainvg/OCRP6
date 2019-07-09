@@ -80,6 +80,12 @@ import os
 print("Obtenir uniquement @IP:")
 os.system("hostname -I")
 
+## VOIR INFORMATION IP PUBLIC DE LA MACHINE ##
+
+import os
+print("Voir Addresse IP WAN / Public :")
+os.system("wget http://checkip.dyndns.org/ -O - -o /dev/null | cut -d: -f 2 | cut -d\< -f 1")
+
 ## EXECUTER UNE REQUETE PING ##
 
 import os

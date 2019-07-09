@@ -72,7 +72,7 @@ os.system("ipconfig")
 ## VOIR INFORMATION IP PUBLIC DE LA MACHINE ##
 
 import os
-print("Voir IP public de la machine")
+print("Voir Addresse IP WAN / Public :")
 os.system("nslookup myip.opendns.com. resolver1.opendns.com")
 
 ## VOIR TOUTE LES INFORMATIONS RESEAUX DE LA MACHINE ##
