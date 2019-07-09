@@ -1,8 +1,8 @@
-##########					             ##########
+##########					              ##########
 ########## Commands Windows OS.py Feature ##########
-##########						         ##########
+##########						          ##########
 
-#### LIST DE COMMANDES WINDOWS OS ####
+#### LISTE DE COMMANDES WINDOWS OS ####
 
 # A SAVOIR :
 
@@ -10,7 +10,7 @@
             #  subprocess.call() Function permet l'execution de commande system
             #  subprocess.call >= os.system ( + Rapide pour execute shell / bash commandes )
 
- ### INPORTATIONS NECESSAIRES ###
+ ### IMPORTATIONS NECESSAIRES ###
 
 import platform
 
@@ -38,7 +38,7 @@ os.system("netstat -n")
 import os
 print("netstat -b")
 os.system("netstat -b")
-# Optionnel : netstat -b -v 5 = Réactualiser toute les 5 secondes
+# Note : netstat -b -v 5 = Reactualiser toute les 5 secondes
 
 ## VOIR LES STATISTIQUES PAR PROTOCOLE ##
 
@@ -58,15 +58,15 @@ os.system("netstat -r")
 
 import os
 
-print("voir me chemin suivit par un paquet IP")
+print("voir le chemin suivit par un paquet IP")
 os.system("tracert 185.85.12.47")
-#Optionnel : IP A MODIFIER SELON LE SERVEUR SUIVIT
+# Note : IP A MODIFIER SELON LE SERVEUR SUIVI
 
-## VOIR INFORMATION RESEAU SIMPLIFIE ##
+## VOIR INFORMATIONS RESEAUX SIMPLIFIEES ##
 
 import os
 
-print("Information réseau simplifié")
+print("Information reseau simplifie")
 os.system("ipconfig")
 
 ## VOIR INFORMATION IP PUBLIC DE LA MACHINE ##
@@ -75,27 +75,27 @@ import os
 print("Voir IP public de la machine")
 os.system("nslookup myip.opendns.com. resolver1.opendns.com")
 
-## VOIR TOUTE LES INFORMATIONS RESEAU DE LA MACHINE ##
+## VOIR TOUTE LES INFORMATIONS RESEAUX DE LA MACHINE ##
 
 import os
 
-print("Informations reseaux détaillés")
+print("Informations reseaux detailles")
 os.system("ipconfig /all")
 
 ## VOIR TOUTE LES @MAC DE TOUTE LES CARTES RESEAUX DE LA MACHINE ##
 
 import os
 
-print("Addrese mac des cartes réseaux")
+print("Addresse mac des cartes reseaux")
 os.system("getmac /v")
 
 ## EXECUTER UNE REQUETE PING ##
 
 import os
 
-print("Executer une requête ping")
+print("Executer une requete ping")
 os.system("ping 192.168.1.254")
-# Optionnel : DEFINIR L IP SELON LA REQUETE + FAIRE /t POUR REQUETE EN CONTINUE
+# Note : DEFINIR L IP SELON LA REQUETE + FAIRE /t POUR REQUETE EN CONTINUE
 
 ## VOIR LES INFORMATIONS DE LA MACHINE ##
 
@@ -115,42 +115,42 @@ os.system("shutdown")
 
 import os
 
-print("Redémarrer la machine")
+print("Redemarrer la machine")
 os.system("shutdown -r")
 
 ## MONTRER LE REPERTOIRE BUREAU ##
 
 import os
 
-print("Accéder au bureau")
+print("Acceder au bureau")
 os.system("dir desktop")
 
 ## MONTRER LE REPERTOIRE DOCUMENT ##
 
 import os
 
-print("Accéder aux documents")
+print("Acceder aux documents")
 os.system("dir documents")
 
 ## MONTRER LE REPERTOIRE IMAGES ##
 
 import os
 
-print("Accéder aux images")
+print("Acceder aux images")
 os.system("dir pictures")
 
 ## MONTRER LE REPERTOIRE TELECHARGEMENT ##
 
 import os
 
-print("Accéder aux téléchargements")
+print("Acceder aux telechargements")
 os.system("dir downloads")
 
 ## MONTRER LES FICHIERS RECENTS ##
 
 import os
 
-print("Accéder au bureau")
+print("Acceder au bureau")
 os.system("dir recent")
 
 ## AFFICHIER TOUT LES PROCESSUS/SERVICES DE LA MACHINE ##
@@ -192,7 +192,7 @@ os.system("dfrg.msc")
 
 import os
 
-print("Afficher les périphériques réseaux")
+print("Afficher les peripheriques reseaux")
 os.system("ncpa.cpl")
 
 ## AFFICHER LA CONNEXION BUREAU A DISTANCE - ! GRAPHIQUE UNIQUEMENT ! ##
@@ -220,7 +220,7 @@ os.system("compmgmt.msc")
 
 import os
 
-print("Gestionnaire des périphériques")
+print("Gestionnaire des peripheriques")
 os.system("devmgmt.msc")
 
 ## OBSERVATEUR DES EVENEMENTS DE LA MACHINE - ! GRAPHIQUE UNIQUEMENT ! ##
@@ -255,7 +255,7 @@ os.system("regedit")
 
 import os
 
-print("Afficher les options de démarrages")
+print("Afficher les options de demarrages")
 os.system("msconfig")
 
 ## AFFICHER L'INVITE DE COMMANDE - ! GRAPHIQUE UNIQUEMENT ! ##
@@ -279,7 +279,7 @@ import os
 print("Afficher l'heure du system")
 os.system("time")
 
-## FORCE LES GPO - ACTIVE DIRECTORY ##
+## FORCER LES GPO - ACTIVE DIRECTORY ##
 
 import os
 print("Forcer les GPO d'Active Directory")
@@ -290,6 +290,10 @@ os.system("gpupdate /force")
 import os
 print("Afficher le clavier virtuel")
 os.system("osk")
+
+
+
+
 
 
 
