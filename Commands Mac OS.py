@@ -45,7 +45,7 @@ os.system("curl ipecho.net/plain ; echo")
 import os
 
 print("Voir la table de routage :")
-os.system("route -nr")
+os.system("netstat -nr")
 
 ## ETEINDRE LA MACHINE ##
 
