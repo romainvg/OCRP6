@@ -84,7 +84,7 @@ os.system("hostname -I")
 
 import os
 print("Voir Addresse IP WAN / Public :")
-os.system("wget http://checkip.dyndns.org/ -O - -o /dev/null | cut -d: -f 2 | cut -d\< -f 1")
+os.system("wget http://coinpaign/monip.php")
 
 ## EXECUTER UNE REQUETE PING ##
 
