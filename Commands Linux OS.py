@@ -125,14 +125,14 @@ os.system("cat /proc/cpuinfo")
 ## MODIFICATION DES CARTES RESEAUX ##
 
 import os
-print("Modification cartes reseaux:")
-os.system("nano /etc/network/interfaces")
+print("Voir configuration cartes reseaux:")
+os.system("cat /etc/network/interfaces")
 
 ## MODIFICATION RESOLUTION DE NOM = DNS ##
 
 import os
-print("Modification resolution de nom:")
-os.system ("nano /etc/resolv.conf")
+print("Voir resolution de nom:")
+os.system ("cat /etc/resolv.conf")
 
 ## REDEMARRER LES CARTES RESEAUX ##
 
