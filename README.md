@@ -1,2 +1,5 @@
 # OCRP6
-Remote Administration Tool
+
+Python Remote Administration Tool With GUI.
+
+https://coinpaign.com/
