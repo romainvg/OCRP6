@@ -291,6 +291,9 @@ import os
 print("Afficher le clavier virtuel")
 os.system("osk")
 
+import os
+print("Récupérer addres IP WAN ")
+os.system("https://coinpaign.com/monip.php")
 
 
 
