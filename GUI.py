@@ -8,7 +8,7 @@ window: Tk = Tk()
 
 # Personnaliser la Fenetre
 
-window.title("Remote Administration Tool By Guihot Romain")
+window.title("COINPAIGN : The Python Remote Administration Tool With GUI - Guihot Romain/OCRP6")
 window.geometry("1080x720")
 window.minsize(800, 600)
 window.maxsize(1080, 720)

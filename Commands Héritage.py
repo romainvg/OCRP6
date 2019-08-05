@@ -1,8 +1,8 @@
 import os
 
 class Systeme:
-    """"" Class pour les sytèmes d exploitation """""
 
+    """"" Class pour les sytèmes d exploitation """""
 
     def __init__(self, ip=""):
         self.ip=""
