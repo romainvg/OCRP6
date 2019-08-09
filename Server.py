@@ -14,5 +14,5 @@ while True:
     data = c.recv(1024).decode()
     if not data:
         break
-    print(str(data))
+print("Connexion Impossible")
 c.close()
