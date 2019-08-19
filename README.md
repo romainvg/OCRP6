@@ -1,4 +1,3 @@
-<img src="https://coinpaign.com/wp-content/themes/thefox/images/logo1.png" alt="" data-canonical-src="https://coinpaign.com/wp-content/themes/thefox/images/logo1.png" style="max-width:100%;">
 
 # OCRP6 | COINPAIGN
 
