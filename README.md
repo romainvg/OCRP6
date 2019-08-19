@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://coinpaign.com/wp-content/themes/thefox/images/logo1.png" width="300" />
+    <img src="https://coinpaign.com/wp-content/themes/thefox/images/logo1.png" width="400" />
 </p>
  
 <br><br>
