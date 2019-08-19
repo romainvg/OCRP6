@@ -1,3 +1,5 @@
+<img style="height: 22rem; width: 20rem; margin-top: 4rem; margin-bottom: 2rem; position:relative; z-index: 9999" src="https://coinpaign.com/wp-content/themes/thefox/images/logo1.png">
+
 # OCRP6 | COINPAIGN
 
 Coinpaign is a Python Remote Administration Tool With GUI | https://coinpaign.com/
