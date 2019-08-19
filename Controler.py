@@ -1,6 +1,5 @@
 import socket
 
-
 def server_program():
     # get the hostname
     host = socket.gethostname()
@@ -14,18 +13,19 @@ def server_program():
     server_socket.listen(10)
     conn, address = server_socket.accept()  # accept new connection
     print("Connection Established From : " + str(address))
-    while True:
-        # receive data stream. it won't accept data packet greater than 1024 bytes
-        data = conn.recv(1024).decode()
-        if not data:
-            # if data is not received break
+
+    while True:     # receive data stream. it won't accept data packet greater than 1024 bytes
+
+        cmd_send = input(' Entrer Une Commande -> ')
+        conn.send(cmd_send.encode())  # send data to the client
+        data = conn.recv(10240)
+        if not data:      # if data is not received break
             break
-        print("Received From Client : " + str(data))
-        data = input(' -> ')
-        conn.send(data.encode())  # send data to the client
+        result = str(data).replace("\\r\\n", "\n")
+        print("Received From Controled : " + result)
 
     conn.close()  # close the connection
 
-
 if __name__ == '__main__':
     server_program()
+
