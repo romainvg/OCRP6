@@ -1,6 +1,6 @@
-<div style="text-align: center">
+<p align="center">
     <img src="https://coinpaign.com/wp-content/themes/thefox/images/logo1.png" width="300" />
-</div>
+</p>
  
 # OCRP6 | COINPAIGN
 
