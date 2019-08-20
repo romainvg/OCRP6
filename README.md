@@ -22,22 +22,27 @@ This program can be used by individuals & professionals to connect to a computer
       
  -C Download/Upload Files
       
-      Donwload file from the remote machine. Saved into the Software Directory
+      Download file from the remote machine. Saved into the Software Directory
       Upload file to the remote machine.
+      
+ -D Geolocalise IP/Get Server IP
+ 
+      whois : Geolocate IP with +5 arguments
+      getservip : Get the Server IP adress from domain name
        
- -D Desktop Screenshots
+ -E Desktop Screenshots
  
       Take auto-screenshots ( Set x in second to setup the interval ) from the remote machine. Saved into the Software Directory 
       
- -E IP Scan
+ -F IP Scan
       
       Discover the network with IP Scan ( Set the subnet & subnet mask ) When success, display IP + MAC
       
- -F Port Scan
+ -G Port Scan
  
       Discover the Port Open ( Set number of port to scan ). Red for Port Close & Green for Port Open.
       
- -G ChatBox 
+ -H ChatBox 
       
       Send/Receive message from a simple chatbox
       
