@@ -71,7 +71,7 @@ os.system("say hello world")
 import os
 
 print("Voir la version de l'OS :")
-os.system("tail /System/Library/CoreServices/SystemVersion.plist | grep -A 1 "ProductVersion"")
+os.system("tail /System/Library/CoreServices/SystemVersion.plist | grep -A 1 ProductVersion")
 
 ## TELECHARGER UN FICHIER SANS NAVIGATEUR WEV ##
 
