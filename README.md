@@ -29,19 +29,15 @@ This program can be used by individuals & professionals to connect to a computer
  
       Take auto-screenshots ( Set x in second to setup the interval ) from the remote machine. Saved into the Software Directory 
       
- -E Cam Screenshots
-      
-      Take auto-screenshots ( Set x in second to setup the interval ) from the remote machine. Saved into the Software Directory
-      
- -F IP Scan
+ -E IP Scan
       
       Discover the network with IP Scan ( Set the subnet & subnet mask ) When success, display IP + MAC
       
- -G Port Scan
+ -F Port Scan
  
       Discover the Port Open ( Set number of port to scan ). Red for Port Close & Green for Port Open.
       
- -H ChatBox 
+ -G ChatBox 
       
       Send/Receive message from a simple chatbox
       
