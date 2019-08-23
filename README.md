@@ -49,7 +49,7 @@ This program can be used by individuals & professionals to connect to a computer
       
 # Graphical User Interface (GUI) : 
 
-Into this GUI we'r going to quick view the target(s) machine(s) and take action on it : 
+Into this GUI we'r going to quick view the target(s) machine(s) infos and take action on it with the features mentionned above : 
 
 #1 Flag of country from WAN IP 
 
