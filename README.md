@@ -20,7 +20,7 @@ This program can be used by individuals & professionals to connect to a computer
  
       Send/Receive OS Commands.
       
- -C Download/Upload Files
+ -C File Manager ( Inspire from fman ) - Develop Later
       
       Download file from the remote machine. Saved into the Software Directory
       Upload file to the remote machine.
@@ -30,9 +30,10 @@ This program can be used by individuals & professionals to connect to a computer
       whois : Geolocate IP with +5 arguments
       getservip : Get the Server IP adress from domain name
        
- -E Desktop Screenshots
+ -E Remote Live Desktop
  
-      Take auto-screenshots ( Set x in second to setup the interval ) from the remote machine. Saved into the Software Directory 
+      Remote Live Desktop with mouse action  
+      (Optionnal) Take auto-screenshots ( Set x in second to setup the interval ) from the remote machine. Saved into the Software Directory 
       
  -F IP Scan
       
