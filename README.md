@@ -48,3 +48,19 @@ This program can be used by individuals & professionals to connect to a computer
       Send/Receive message from a simple chatbox
       
 # Graphical User Interface (GUI) : 
+
+Into this GUI we'r going to quick view the target(s) machine(s) and take action on it : 
+
+#1 Flag of country from WAN IP 
+
+#2 LAN/WAN IP 
+
+#3 Name Of Session ( User@Admin or User ) 
+
+#4 Operating System 
+
+#5 Last active process ( for example google.com/thewebsitethatusercheck.com ) 
+
+#6 System informations : Processor / Ram use ( in % for example 20% Core I7 3,2 Ghz & 55% 8Gb Ram) 
+
+#7 Ping in MS ( 20 ms )
