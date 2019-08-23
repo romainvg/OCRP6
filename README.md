@@ -20,7 +20,7 @@ This program can be used by individuals & professionals to connect to a computer
  
       Send/Receive OS Commands.
       
- -C File Manager ( Inspire from fman ) - Develop Later
+ -C File Manager ( Inspire from fman ) - Going to develop this feature later
       
       Download file from the remote machine. Saved into the Software Directory
       Upload file to the remote machine.
@@ -37,11 +37,11 @@ This program can be used by individuals & professionals to connect to a computer
       
  -F IP Scan
       
-      Discover the network with IP Scan ( Set the subnet & subnet mask ) When success, display IP + MAC
+      Discover the network with IP Scan ( Set the subnet ) When success, display IP + ( optional MAC)
       
  -G Port Scan
  
-      Discover the Port Open ( Set number of port to scan ). Red for Port Close & Green for Port Open.
+      Discover the Port Open ( Set number of port to scan ).
       
  -H ChatBox 
       
