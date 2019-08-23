@@ -20,10 +20,11 @@ This program can be used by individuals & professionals to connect to a computer
  
       Send/Receive OS Commands.
       
- -C File Manager ( Inspire from fman ) - Going to develop this feature later
+ -C File Manager - A dual-panel file manager ( Inspire from fman ) - Going to develop this feature later
       
       Download file from the remote machine. Saved into the Software Directory
       Upload file to the remote machine.
+      Drag & Drop
       
  -D Geolocalise IP/Get Server IP
  
