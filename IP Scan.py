@@ -1,65 +1,104 @@
-import os
-import time
 import sys
-from subprocess import Popen
+import os
+import os.path
+from datetime import datetime
+from scapy.all import srp, Ether, ARP, conf
 
-devnull = open(os.devnull, 'wb')
+conf.verb = 0
 
-print('====================================')
 
-ip_subnet = input("Set the Subnet ( example: 192.168.0 ) --->")
+def arp():
+    try:
+        ips = input("[*] Enter Range of IPs to Scan for: ")
 
-print('====================================')
+    except KeyboardInterrupt:
+        print("\n[*] User Requested Shutdown")
+        print("[*] Quitting...")
+        sys.exit(1)
 
-print('Scanning Subnet :\t' + ip_subnet)
+    print("\n[*] Scanning...")
+    start_time = datetime.now()
+    ans, unans = srp(Ether(dst="ff:ff:ff:ff:ff:ff") / ARP(pdst=ips), timeout=2)
 
-print('====================================')
+    print("MAC - IP\n")
+    for snd, rcv in ans:
+        print(rcv.sprintf(r"%Ether.src% - %ARP.psrc%"))
+    stop_time = datetime.now()
+    total_time = stop_time - start_time
+    print("\n[*] Scan Complete!")
+    print("[*] Scan Duration: %s" % (total_time))
 
-if ip_subnet == "":
-    print('====================================')
-    print("Please type a valid Subnet...")
-    print('====================================')
+    devices = {}
+    for snd, rcv in ans:
+        print(rcv.psrc + "\t\t" + rcv.src)
+        devices[rcv.src] = rcv.psrc
 
-p = []
-active = 0
-no_answer = 0
-passive = 0
+    return devices
 
-for interval in range(0, 255):
-    ip = ip_subnet + ".%d" % interval
-    p.append((ip, Popen(['ping', '-c', '3', ip], stdout=devnull)))
-while p:
-    for i, (ip, proc) in enumerate(p[:]):
-        if proc.poll() is not None:
-            p.remove((ip, proc))
-            if proc.returncode == 0:
-                print('%s active' % ip)
-                active = active + 1
-            elif proc.returncode == 2:
-                print('%s No answer' % ip)
-                active = no_answer + 1
+
+def createText(deviceList):
+    devices = open("devices.txt", "w")
+    for mac, ip in deviceList.iteritems():
+        devices.write(mac + "&" + ip + "\n")
+    devices.close()
+
+
+def textList():
+    l = open("devices.txt", "r")
+    List = l.readlines()
+    textList = {}
+    for i in range(len(List)):
+        mac, ip = List[i].split("&")
+        ip = ip[:-1]
+        textList[mac] = ip
+
+    l.close()
+    return textList
+
+
+def checkText():
+    newText = {}
+    oldText = {}
+    newText = arp()
+    oldText = textList()
+    lastMacs = list(oldText.keys())
+    newMacs = list(newText.keys())
+    text = {}
+
+    for i in range(len(newText)):
+        if newMacs[i] in lastMacs:
+            if (newText[newMacs[i]] == oldText[newMacs[i]]):
+                text[newMacs[i]] = newText[newMacs[i]]
+                continue
             else:
-                print('%s passive' % ip)
-                passive = passive + 1
-    time.sleep(.04)
-devnull.close()
+                while (1):
+                    option = input("\n[*] IP of The MAC address %s that is in your lan has changed. Do you want save this change ? (y/n): " %newMacs[i])
+                    if (option == "y" or option == "Y"):
+                        text[newMacs[i]] = newText[newMacs[i]]
+                        break
+                    elif (option == "n" or option == "N"):
+                        text[newMacs[i]] = oldText[newMacs[i]]
+                        break
+                    else:
+                        print('[*] Please Only Select "Y" or "N" Option!')
+        else:
+            while (1):
+                option = input("\n[*] Do you want save this device: %s to list ? (y/n): " % newMacs[i])
+                if (option == "y" or option == "Y"):
+                    text[newMacs[i]] = newText[newMacs[i]]
+                    break
+                elif (option == "n" or option == "N"):
+                    break
+                else:
+                    print('[*] Please Select Only "Y" or "N" Option !')
+    createText(text)
 
-print('====================================')
 
-print("LOCAL NETWORK IP SCANNER. COINPAIGN.")
+def main():
+    if os.path.exists("devices.txt"):
+        checkText()
+    else:
+        createText(arp())
 
-print('====================================')
 
-print('Current Operating System ' + os.name)
-print("Network Status")
-print("Active IP  [ ", active, " ]")
-print("Passive IP [ ", passive, " ]")
-print("No Answer  [ ", no_answer, " ]")
-
-print('====================================')
-
-scan_complete = "Scan Complete.."
-
-print('= scan_complete')
-
-print('====================================')
+main()
