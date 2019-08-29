@@ -9,7 +9,7 @@ conf.verb = 0
 
 def arp():
     try:
-        ips = input("[*] Enter Range of IPs to Scan for: ")
+        ips = input("Enter Subnet & Subnet Mask ( Ex: 192.168.1.0/24) : ")
 
     except KeyboardInterrupt:
         print("\n[*] User Requested Shutdown")
