@@ -36,17 +36,17 @@ This program can be used by individuals & professionals to connect to a computer
       Remote Live Desktop with mouse action  
       (Optionnal) Take auto-screenshots ( Set x in second to setup the interval ) from the remote machine. Saved into the Software Directory 
       
- -F IP Scan
+ -F IP/ARP Scan
       
-      Discover the network with IP Scan ( Set the subnet ) When success, display IP + ( optional MAC)
+      Discover the network with IP Scan ( set subnet/subnet mask ) When success, display IP + MAC Address & save infomrations in text file ( devices.txt)
       
  -G Port Scan
  
       Discover the Port Open ( Set number of port to scan ).
       
- -H ChatBox 
+ -H MacVendor 
       
-      Send/Receive message from a simple chatbox
+      Display MacVendor from input Address MAC
       
 # Graphical User Interface (GUI) : 
 
@@ -54,14 +54,16 @@ Into this GUI we'r going to quick view the target(s) machine(s) infos and take a
 
 #1 Flag of country from WAN IP 
 
-#2 LAN/WAN IP 
+#2 Country/City
 
-#3 Name Of Session ( User@Admin or User ) 
+#3 LAN/WAN IP 
 
-#4 Operating System 
+#4 Active Session Name ( Name of the OS Session )  
 
-#5 Last active process ( for example google.com/thewebsitethatusercheck.com ) 
+#5 Operating System 
 
-#6 System informations : Processor / Ram use ( in % for example 20% Core I7 3,2 Ghz & 55% 8Gb Ram) 
+#6 Last active process ( for example google.com/thewebsitethatusercheck.com ) 
 
-#7 Ping in MS ( 20 ms )
+#7 System informations : Processor / Ram use ( in % for example 20% Core I7 3,2 Ghz & 55% 8Gb Ram) 
+
+#8 Ping in MS ( 20 ms )
