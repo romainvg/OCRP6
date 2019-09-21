@@ -1,0 +1,36 @@
+QPushButton{
+    border: 1px outset #096EF5;
+    border-radius: 3px;
+    size: 30px
+    font-family: arial;
+}   
+
+
+QLineEdit{
+    border: 1.4px solid #939393;
+    border-radius: 9px; 
+    padding: 0 1px;
+    font-family: arial;
+}
+
+QLineEdit:focus{
+    border: 1.4px solid #0983DB;
+}
+
+
+QLabel{
+    font-family: arial;
+}
+
+
+box#portEdit{
+    border: 1.4px solid #939393;
+    border-radius: 9px; 
+    padding: 0 1px;
+    font-family: arial;
+}
+
+
+QPushButton:pressed {
+    border-style: inset;
+} 
