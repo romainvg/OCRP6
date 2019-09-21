@@ -62,8 +62,6 @@ Into this GUI we'r going to quick view the target(s) machine(s) infos and take a
 
 #5 Operating System 
 
-#6 Last active process ( for example google.com/thewebsitethatusercheck.com ) 
+#6 System informations : Processor / Ram use ( in % for example 20% Core I7 3,2 Ghz & 55% 8Gb Ram) 
 
-#7 System informations : Processor / Ram use ( in % for example 20% Core I7 3,2 Ghz & 55% 8Gb Ram) 
-
-#8 Ping in MS ( 20 ms )
+#7 Ping in MS ( 20 ms )
