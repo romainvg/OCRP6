@@ -10,6 +10,11 @@ Coinpaign is a Python Remote Administration Tool With GUI | https://coinpaign.co
 
 This program can be used by individuals & professionals to connect to a computer via the Internet or across a local network remotely. This tool is based on the server and client technology. The server(Controled) part runs on a controlled computer and receives commands from the client(Controler).
 
+<p align="center">
+    <img src="https://coinpaign.com/img/GUI%20X.png" width="400" />
+</p>
+ 
+
 # Functions :
 
  -A Client/Server Sockets
