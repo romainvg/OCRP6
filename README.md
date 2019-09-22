@@ -25,7 +25,7 @@ This program can be used by individuals & professionals to connect to a computer
  
       Send/Receive OS Commands.
       
- -C File Manager - A dual-panel file manager ( Inspire from fman ) - Going to develop this feature later
+ -C File Manager - A dual-panel file manager ( Inspire from fman ) - Coming Soon
       
       Download file from the remote machine. Saved into the Software Directory
       Upload file to the remote machine.
@@ -70,3 +70,9 @@ Into this GUI we'r going to quick view the target(s) machine(s) infos and take a
 #6 System informations : Processor / Ram use ( in % for example 20% Core I7 3,2 Ghz & 55% 8Gb Ram) 
 
 #7 Ping in MS ( 20 ms )
+
+
+# Coming Soon :
+
+File Manager ( Fman Inspire)
+SSH Client (Paramiko) | TELNET Client (telnetlib) ( Accross Public IP or from controled computer ) 
