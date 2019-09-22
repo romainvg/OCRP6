@@ -74,5 +74,5 @@ Into this GUI we'r going to quick view the target(s) machine(s) infos and take a
 
 # Coming Soon :
 
-File Manager ( Fman Inspire)
-SSH Client (Paramiko) | TELNET Client (telnetlib) ( Accross Public IP or from controled computer ) 
+File Manager ( Fman Inspire) |
+SSH Client (Paramiko) & TELNET Client (telnetlib) ( Accross Public IP or from controled computer ) 
