@@ -1,8 +1,14 @@
-##########					              ##########
-########## Commands Windows OS.py Feature ##########
-##########						          ##########
+#################################################################################
+#   The software is licensed Creative Commons CC-BY-NC-SA. Under this agreement #
+#   you are authorized to use, share on the same rights or edit this software   #
+#   for personnal purpose only. You are not allow to sell this software.        #
+#                                                                               #
+#    Official Website : https://coinpaign.com                                   #
+#    Contact : romain.guihot@gmail.com                                          #
 
-#### LISTE DE COMMANDES WINDOWS OS ####
+#   This file is not use by the remote administration yet, you can use it for   #
+#   a command memento for Windows                                               #
+#################################################################################
 
 # A SAVOIR :
 
