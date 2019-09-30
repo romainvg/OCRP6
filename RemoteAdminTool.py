@@ -1,7 +1,14 @@
 ####################################################################################
 #                                                                                  #
 #  RemoteAdminTool.py                                                              #
+#                                                                                  #                                                                            #
+#  The software is licensed Creative Commons CC-BY-NC-SA. Under this agreement     #
+#  you are authorized to use, share on the same rights or edit this software       #
+#  for personnal purpose only. You are not allow to sell this software.            #
 #                                                                                  #
+#    Official Website : https://coinpaign.com                                      #
+#    Contact : romain.guihot@gmail.com                                             #
+                                                                               
 #  This module is installed in Remote Administrator' computer.                     #
 #  This is main program for remote administration tool used in Coinpaign           #
 #  management environment(local area network).                                     #
