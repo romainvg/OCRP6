@@ -6,7 +6,7 @@
 #    Official Website : https://coinpaign.com                                   #
 #    Contact : romain.guihot@gmail.com                                          # 
 
-#   This file is not use by the mail remote administration Tool Yet             #
+#   This file is not use by the remote administration Tool Yet                  #
 #################################################################################
 
 import os
