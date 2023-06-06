@@ -6,7 +6,7 @@
 
 # OCRP6 | COINPAIGN
 
-Coinpaign is a Python Remote Administration Tool With GUI | https://coinpaign.com/
+Coinpaign is a Python Remote Administration Tool With GUI.
 
 This program can be used by individuals & professionals to connect to a computer via the Internet or across a local network remotely. This tool is based on the server and client technology. The server(Controled) part runs on a controlled computer and receives commands from the client(Controler).
 
