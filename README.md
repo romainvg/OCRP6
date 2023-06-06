@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://coinpaign.com/wp-content/themes/thefox/images/logo1.png" width="400" />
+    <img src="https://image.noelshack.com/fichiers/2023/23/2/1686012424-logo1.png" width="400" />
 </p>
  
 <br><br>
@@ -11,7 +11,7 @@ Coinpaign is a Python Remote Administration Tool With GUI | https://coinpaign.co
 This program can be used by individuals & professionals to connect to a computer via the Internet or across a local network remotely. This tool is based on the server and client technology. The server(Controled) part runs on a controlled computer and receives commands from the client(Controler).
 
 <p align="center">
-    <img src="https://coinpaign.com/img/GUI%20X.png" />
+    <img src="https://image.noelshack.com/fichiers/2023/23/2/1686012562-gui-x.png" />
 </p>
  
 
